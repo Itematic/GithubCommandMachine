@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Refactors>
+  <Renames>
+    <RenamedType>
+      <Type guid="81cefd2c-386d-43f6-a0ca-cadba983885b">GIT2</Type>
+      <From>Git2</From>
+      <To>Git2_FB</To>
+    </RenamedType>
+  </Renames>
+</Refactors>

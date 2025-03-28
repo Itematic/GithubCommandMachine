@@ -32,6 +32,9 @@
     <Compile Include="Git\Gi1\Git1_FB.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Git\Git2\Git2_FB.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ITFs\I_LampCtrl.TcIO">
       <SubType>Code</SubType>
     </Compile>
@@ -48,6 +51,7 @@
   <ItemGroup>
     <Folder Include="FBs" />
     <Folder Include="Git\Gi1" />
+    <Folder Include="Git\Git2" />
     <Folder Include="ITFs" />
     <Folder Include="Diagrams" />
     <Folder Include="Git" />

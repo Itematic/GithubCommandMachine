@@ -3,10 +3,16 @@
   <Itf Name="I_LampCtrl_Diag" Id="{804c5618-e476-4185-8187-743e9cf68995}">
     <Declaration><![CDATA[INTERFACE I_LampCtrl_Diag EXTENDS I_LampCtrl
 ]]></Declaration>
+    <Method Name="CheckLampID" Id="{10af500a-ee88-472e-ba19-e82e37c35531}">
+      <Declaration><![CDATA[METHOD CheckLampID : INT
+VAR_INPUT
+	I_xStart	:	BOOL;
+END_VAR
+]]></Declaration>
+    </Method>
     <Method Name="Diag" Id="{654c7629-4869-4ae9-a5e9-418bc8617069}">
       <Declaration><![CDATA[METHOD Diag : BOOL
-VAR_INPUT
-END_VAR
+
 ]]></Declaration>
     </Method>
   </Itf>

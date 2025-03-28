@@ -6,15 +6,18 @@ VAR
 	// Used to demo ITF reference on start-up
 	fbLamp1 	: FB_LAMP_DIMM;
 	fbLamp2 	: FB_LAMP_ONOFF;
-	
+	fbLampDiag	: FB_LAMP_DIAG;
+	fbLampDiag2	: FB_LAMP_DIAG;
 	
 	// Interface
-	LampCtrl 	: ARRAY[0..1] OF I_LampCtrl := [fbLamp1, fbLamp2];
+	LampCtrl 	: ARRAY[0..2] OF I_LampCtrl := [fbLamp1, fbLamp2, fbLampDiag2];
+	ILampCtrl_Diag :	I_LampCtrl_Diag := fbLampDiag;
 	
 	// Program Control
 	bLightsOn	: BOOL;
 	bLightsOff	: BOOL;
 	State		: ARRAY[0..1] OF STRING;
+	eRet		: INT;
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -30,17 +33,25 @@ IF bLightsOff THEN
 	END_IF
 END_IF
 
+LampCtrl[2].OFF();
+
 State[0] := LampCtrl[0].State;
 State[1] := LampCtrl[1].State;
-]]></ST>
+
+eRet	:=	ILampCtrl_Diag.CheckLampID(I_xStart := TRUE);
+	]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="53" Count="0" />
       <LineId Id="67" Count="2" />
       <LineId Id="57" Count="2" />
       <LineId Id="70" Count="2" />
-      <LineId Id="63" Count="3" />
+      <LineId Id="63" Count="0" />
+      <LineId Id="90" Count="1" />
+      <LineId Id="64" Count="2" />
+      <LineId Id="92" Count="0" />
       <LineId Id="33" Count="0" />
+      <LineId Id="94" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>

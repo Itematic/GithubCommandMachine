@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<TcLicenseInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2011/11/TcLicenseInfo">
+	<LicenseInfo>
+		<SystemId>{C483FA96-473C-5C8B-7DA4-90C1A300CBE2}</SystemId>
+		<IssueTime>2025-01-31T22:23:00</IssueTime>
+		<ExpireTime>2025-02-08T00:00:00</ExpireTime>
+		<LicenseKey>a57675492d64c8fc0a7855110b09f8f13efa879588927cc9d8e3bfa4cd89c711d73c0d15c3b1bffb70c7e9e47e0388b40bf58621eb5c6f992046d735ee67ef9784a8dc30ba2bb29398b9e76bda7dac7dbc43dad30a78d40bbbee8c20f28b7355127db6a3329ff76f87f7c84301d5b5f8c24f5339d0af404eec253c71e20b33da4905d294b11408c1e5f7bdbd817738863fbe429cd2a04e3f280aae8098555c89fa11c1a6ff48c82d14ad30dc74aa7ad88de4e09c65bdb07db9f06877bcf4929879e6e52376110db6b79d5ca79cf22f3edc7a902462738fc2eb2f7feda590a957e7ed8d4bf90c9ebf75e8493b70aa16a9272ad59564811f452a37a922525e5aca</LicenseKey>
+		<License>
+			<LicenseId>{4C256767-E6E6-4AF5-BD68-9F7ABAD0C200}</LicenseId>
+			<Name>TC3 ADS</Name>
+			<OrderNo>TC1000</OrderNo>
+		</License>
+		<License>
+			<LicenseId>{3FF18E97-7754-401B-93FB-70544DE28A13}</LicenseId>
+			<Name>TC3 IO</Name>
+			<OrderNo>TC1100</OrderNo>
+		</License>
+		<License>
+			<LicenseId>{66689887-CCBD-452C-AC9A-039D997C6E66}</LicenseId>
+			<Name>TC3 PLC</Name>
+			<OrderNo>TC1200</OrderNo>
+		</License>
+	</LicenseInfo>
+</TcLicenseInfo>

@@ -29,6 +29,9 @@
     <Compile Include="FBs\FB_LAMP_ONOFF.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Git\Gi1\Git1_FB.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ITFs\I_LampCtrl.TcIO">
       <SubType>Code</SubType>
     </Compile>
@@ -44,8 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="FBs" />
+    <Folder Include="Git\Gi1" />
     <Folder Include="ITFs" />
     <Folder Include="Diagrams" />
+    <Folder Include="Git" />
     <Folder Include="POUs" />
   </ItemGroup>
   <ItemGroup>

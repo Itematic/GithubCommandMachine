@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <Itf Name="I_LampCtrl_Diag" Id="{804c5618-e476-4185-8187-743e9cf68995}">
+    <Declaration><![CDATA[INTERFACE I_LampCtrl_Diag EXTENDS I_LampCtrl
+]]></Declaration>
+    <Method Name="Diag" Id="{654c7629-4869-4ae9-a5e9-418bc8617069}">
+      <Declaration><![CDATA[METHOD Diag : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+    </Method>
+  </Itf>
+</TcPlcObject>

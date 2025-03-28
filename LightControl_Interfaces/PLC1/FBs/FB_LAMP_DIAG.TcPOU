@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_LAMP_DIAG" Id="{59524f85-dde9-4bed-ba94-132faece4afc}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_LAMP_DIAG EXTENDS FB_LAMP_ONOFF IMPLEMENTS I_LampCtrl_Diag;
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+	iInTemperatureHw	AT %I*	: INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Method Name="Diag" Id="{64efed3b-e6da-4fa5-a978-5b15132c7a69}">
+      <Declaration><![CDATA[METHOD Diag : BOOL
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[Diag := FALSE;
+
+IF iInTemperatureHw > 200 THEN
+	SUPER^.OFF();
+END_IF
+
+DIAG := TRUE;]]></ST>
+      </Implementation>
+    </Method>
+    <LineIds Name="FB_LAMP_DIAG">
+      <LineId Id="9" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_LAMP_DIAG.Diag">
+      <LineId Id="4" Count="0" />
+      <LineId Id="6" Count="0" />
+      <LineId Id="5" Count="0" />
+      <LineId Id="10" Count="0" />
+      <LineId Id="8" Count="0" />
+      <LineId Id="12" Count="0" />
+      <LineId Id="11" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
